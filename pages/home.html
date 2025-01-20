@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../styles/navBar.css">
+  <link rel="stylesheet" href="../styles/home.css">
+</head>
+
+<body>
+  <div id="web-container">
+    <div id="navBar">
+      <ul id="main-nav">
+        <li>
+          <a href="./home.html">Home</a>
+        </li>
+        <li>
+          <a href="./about.html">About</a>
+        </li>
+        <li>
+          <a href="./apples.html">Apples</a>
+        </li>
+      </ul>
+
+      <ul id="reg-nav">
+        <li>
+          <a href="./signIn.html">Sign in</a>
+        </li>
+        <li>
+          <a href="./signUp.html">Sign up</a>
+        </li>
+      </ul>
+    </div>
+    <div id="footer">
+      <h4>Shaked's website</h4>
+    </div>
+  </div>
+
+
+
+  <h1 id="homeTitle">Welcome to Shaked's website!</h1>
+  <button id="showModal">Create Post</button>
+  <button id="displayPosts">Display Posts</button>
+  <dialog id="modal">
+    <div id="container">
+      <h1>Add New Post</h1>
+
+      <input type="text" id="title" placeholder="title">
+      <input type="text" id="body" placeholder="body">
+
+      <div>
+        <button id="savePost">Save Post</button>
+      </div>
+    </div>
+  </dialog>
+
+  <div id="posts-to-show"></div>
+  <div id="spinner"></div>
+
+
+  <script src="../scripts/home.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+#title{
+  text-decoration: underline;
+  color: lightblue;
+  text-align: center;
+}
+#ad-line{
+  display: flex;
+  flex-direction: row;
+}
+
+body{
+  background-color: pink;
+}
+
+#red-apple, #green-apple{
+  width: 100px;
+  height: 100px;
+}
+#paragraph{
+  width: 200px;
+}
+#apple-container{
+  /* have to define the height and width when 
+  asigning position sticky to a container */
+  height: 300px;
+  width: 300px;
+  position:sticky;
+  top: 100px;
+  display: flex;
+  flex-direction: column;
+}
+
+p{
+  margin-bottom: 50px;
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../styles/navBar.css">
+  <link rel="stylesheet" href="../styles/signUp.css">
+</head>
+
+<body>
+  <div id="web-container">
+    <div id="navBar">
+      <ul id="main-nav">
+        <li>
+          <a href="./home.html">Home</a>
+        </li>
+        <li>
+          <a href="./about.html">About</a>
+        </li>
+        <li>
+          <a href="./apples.html">Apples</a>
+        </li>
+      </ul>
+
+      <ul id="reg-nav">
+        <li>
+          <a href="./signIn.html">Sign in</a>
+        </li>
+        <li>
+          <a href="./signUp.html">Sign up</a>
+        </li>
+      </ul>
+    </div>
+    <div id="footer">
+      <h4>Shaked's website</h4>
+    </div>
+  </div>
+
+  <br>
+  <br>
+  <br>
+  <br>
+
+  <form>
+
+    <table>
+      <tr>
+        <td></td>
+        <td>
+          <span>Don't have an account?</span>
+          <a href="./signUp.html">signup</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div>Username</div>
+        </td>
+        <td>
+          <div>
+            <input id="username" type="text" name="username" placeholder="username" required>
+          </div>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <div>Password</div>
+        </td>
+        <td>
+          <div>
+            <input id="password" type="password" name="password" placeholder="password" required>
+          </div>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+
+        </td>
+        <td>
+          <div>
+            <input onclick="logUser(event)" id="submit" type="submit" value="login">
+            <div id="spinner"></div>
+          </div>
+        </td>
+
+      </tr>
+
+
+
+    </table>
+
+  </form>
+  <script src="../scripts/logIn.js"></script>
+</body>
+
+</html>

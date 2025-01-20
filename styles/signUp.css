@@ -1,0 +1,83 @@
+form{
+  font-size: larger;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 500px;
+  margin:auto;
+}
+
+form div{
+  margin: 5px;
+}
+
+#submit{
+  margin-top: 10px;
+}
+
+table td{
+ padding: 2%;
+}
+
+table{
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid black;
+  border-radius: 5%;
+}
+
+
+#submit:hover{
+  transition: 0.1s;
+  background-color: rgb(194, 191, 191);
+}
+
+#submit:active{
+  transition: 0.1;
+  background-color: gray;
+  
+}
+
+/* #submit:active ~ #loading-bar-frame #loading-bar{
+  animation: loading-bar 2s linear;
+}
+#submit:active ~ #loading-bar-frame{
+  border: 3px solid black;
+  border-radius: 5%;
+}
+
+
+#loading-bar{
+  border-radius: 2%;
+  background-color: green;
+  color: green;
+  width: 0;
+  height: 30px;
+/* } 
+
+
+
+@keyframes loading-bar{
+  from {width: 5%;}
+  to {width: 100%;}
+} */
+
+#spinner {
+  height: 100px;
+  width: 100px;
+  border: 3px solid black;
+  border-bottom-color: blue;
+  border-left-color: blue;
+  border-radius: 50%;
+  margin: auto;
+  margin-top: 20px;
+  animation: spinner 0.5s infinite linear;
+  display: none;
+}
+
+@keyframes spinner{
+  from {}
+  to {transform: rotate(360deg);}
+}

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../styles/navBar.css">
+  <link rel="stylesheet" href="../styles/signUp.css">
+</head>
+
+<body>
+  <div id="web-container">
+    <div id="navBar">
+      <ul id="main-nav">
+        <li>
+          <a href="./home.html">Home</a>
+        </li>
+        <li>
+          <a href="./about.html">About</a>
+        </li>
+        <li>
+          <a href="./apples.html">Apples</a>
+        </li>
+      </ul>
+
+      <ul id="reg-nav">
+        <li>
+          <a href="./signIn.html">Sign in</a>
+        </li>
+        <li>
+          <a href="./signUp.html">Sign up</a>
+        </li>
+      </ul>
+    </div>
+    <div id="footer">
+      <h4>Shaked's website</h4>
+    </div>
+  </div>
+  <!-- end of nav and start of current page -->
+
+  <br>
+  <br>
+  <br>
+  <br>
+
+  <form>
+
+    <table>
+      <tr>
+        <td></td>
+        <td>Already have an acount?
+          <a href="./signIn.html">login</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div>Username</div>
+        </td>
+        <td>
+          <div>
+            <input id="username" type="text" name="username" placeholder="username" required>
+          </div>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <div>Password</div>
+        </td>
+        <td>
+          <div>
+            <input id="password" type="password" name="password" placeholder="password" required>
+          </div>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <div>Email</div>
+        </td>
+        <td>
+          <div>
+            <input id="email" type="text" name="email" placeholder="email" required>
+          </div>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <p>Gender</p>
+        </td>
+        <td>
+          <div>
+            <label for="">male</label>
+            <input id="male" type="radio" name="male" checked>
+            <label for="">female</label>
+            <input id="female" type="radio" name="female">
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>City</td>
+        <td>
+          <div>
+            <select id="city" name="city" id="">
+              <option value="default">select</option>
+              <option value="Haifa">Haifa</option>
+              <option value="tel-aviv">Tel Aviv</option>
+              <option value="netania">Netania</option>
+              <option value="qiryat-ata">Qiryat Ata</option>
+              <option value="givataim">Givataim</option>
+            </select>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>
+          <div>
+            <input type="checkbox" name="terms">
+            <a href="./termsOfUse">Terms of use</a>
+          </div>
+          <div>
+            <input onclick="sighUp(event)" id="submit" type="submit" value="register">
+            <div id="spinner"></div>
+          </div>
+        </td>
+      </tr>
+    </table>
+  </form>
+  <br>
+  <script src="../scripts/signUp.js"></script>
+</body>
+
+</html>
